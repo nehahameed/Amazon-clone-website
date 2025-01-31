@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<body>
+    <h3>Form with onfocus and onblur events</h3>
+
+    <label>Username:</label>
+    <input type="text" id="username" name="username"
+            onfocus="handleFocus(this)">
+    <br><br>
+
+    <label>Email</label>
+    <input type="email" id="email" name="email"
+            onfocus="handleFocus(this)">
+    <br><br>
+  
+    <script>
+        function handleFocus(element) {
+            element.style.backgroundColor ="lightblue";
+        }
+    </script>
+</body>
+</html>
